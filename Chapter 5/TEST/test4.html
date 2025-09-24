@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const units = parseInt(window.prompt("กรุณาใส่จำนวนหน่วยการใช้ไฟฟ้า: "));
+      let cost = 0;
+      if (units <= 5) {
+        cost = units * 0;
+      } else if (units <= 15) {
+        cost = 5 * 0 + (units - 5) * 1.3576;
+      } else if (units <= 25) {
+        cost = 5 * 0 + 10 * 1.3576 + (units - 15) * 1.5445;
+      } else if (units <= 35) {
+        cost = 5 * 0 + 10 * 1.3576 + 10 * 1.5445 + (units - 25) * 1.7968;
+      } else if (units <= 100) {
+        cost =
+          5 * 0 + 10 * 1.3576 + 10 * 1.5445 + 10 * 1.7968 + (units - 35) * 2.18;
+      } else if (units <= 150) {
+        cost =
+          5 * 0 +
+          10 * 1.3576 +
+          10 * 1.5445 +
+          10 * 1.7968 +
+          65 * 2.18 +
+          (units - 100) * 2.2734;
+      } else if (units <= 400) {
+        cost =
+          5 * 0 +
+          10 * 1.3576 +
+          10 * 1.5445 +
+          10 * 1.7968 +
+          65 * 2.18 +
+          50 * 2.2734 +
+          (units - 150) * 2.7781;
+      } else {
+        cost =
+          5 * 0 +
+          10 * 1.3576 +
+          10 * 1.5445 +
+          10 * 1.7968 +
+          65 * 2.18 +
+          50 * 2.2734 +
+          250 * 2.7781 +
+          (units - 400) * 2.978;
+      }
+
+      if (units <= 150) {
+        cost += 8.19;
+      }
+
+      document.writeln(`ค่าไฟฟ้ารวม = ${cost.toFixed(2)} บาท`);
+    </script>
+  </head>
+  <body></body>
+</html>

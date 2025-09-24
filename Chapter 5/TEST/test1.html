@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const mph = window.prompt("ความเร็วลม (mph) : ");
+
+      if (mph <= 74) document.writeln(`ระดับความแรงต่ำกว่าเกณฑ์`);
+      else if (mph <= 95) document.writeln(`ความเร็ว ${mph} ระดับความแรง 1`);
+      else if (mph <= 110) document.writeln(`ความเร็ว ${mph} ระดับความแรง 2`);
+      else if (mph <= 130) document.writeln(`ความเร็ว ${mph} ระดับความแรง 3`);
+      else if (mph <= 155) document.writeln(`ความเร็ว ${mph} ระดับความแรง 4`);
+      else document.writeln(`ความเร็ว ${mph} ระดับความแรง 5`);
+    </script>
+  </head>
+  <body></body>
+</html>
