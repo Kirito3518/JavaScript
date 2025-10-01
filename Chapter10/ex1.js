@@ -25,5 +25,14 @@ const getMin = (a, b, c) => {
   }
 };
 
+const getSum = (a) => {
+  let sum = 0;
+  for (let i = 1; i <= a; i++) {
+    sum += i;
+  }
+  return sum;
+};
+
 console.log(getmax(300, 605, 90));
 console.log(getMin(30, 605, 90));
+console.log(getSum(5));
