@@ -2,7 +2,7 @@
 const fullname = (prefix, fname, lname) =>
   `ชื่อ-นามสกุล : ${prefix} ${fname} ${lname}`;
 
-console.log(fullname("นาย", "ควยโต", "เย็ดมัน")); // แสดงผล: ชื่อ-นามสกุล : นาย ควยโต เย็ดมัน
+console.log(fullname("นาย", "บัญชา", "สุภี")); // แสดงผล: ชื่อ-นามสกุล : นาย บัญชา สุภี
 
 // ฟังก์ชัน getMax: หาค่ามากที่สุดจากตัวเลข 3 ตัว
 const getMax = (a, b, c) => {
