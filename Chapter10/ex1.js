@@ -14,4 +14,16 @@ getmax = (a, b, c) => {
   }
 };
 
+const getMin = (a, b, c) => {
+  // return Math.min(a, b, c);
+  if (a < b && c > a) {
+    return a;
+  } else if (b < c && a > b) {
+    return b;
+  } else {
+    return c;
+  }
+};
+
 console.log(getmax(300, 605, 90));
+console.log(getMin(30, 605, 90));
